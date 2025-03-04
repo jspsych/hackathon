@@ -1,0 +1,55 @@
+site_name: jsPsych Hackathon 2025
+theme:
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'green'
+    accent: 'orange'
+  logo: 'img/hackathon-logo.svg'
+  favicon: 'img/hackathon-favicon.png'
+
+extra:
+  social:
+    - icon: 'fontawesome/brands/github'
+      link: 'https://github.com/jspsych'
+    - icon: 'fontawesome/brands/twitter'
+      link: 'https://twitter.com/joshdeleeuw'
+  analytics:
+    provider: google
+    property: 'UA-HACKATHON-ID'
+
+copyright: 'Copyright &copy; 2025 jsPsych Community'
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+repo_url: 'https://github.com/jspsych/hackathon-2025'
+site_url: 'https://hackathon.jspsych.org/'
+docs_dir: docs
+
+nav:
+- Home: 'index.md'
+- Event Details:
+  - 'Overview': 'details/overview.md'
+  - 'Schedule': 'details/schedule.md'
+  - 'Location': 'details/location.md'
+- Registration:
+  - 'How to Apply': 'registration/application.md'
+  - 'Participant Guidelines': 'registration/guidelines.md'
+- Learning Tracks:
+  - 'Plugin Development': 'tracks/plugin-development.md'
+  - 'Open Source Contribution': 'tracks/open-source.md'
+- Resources:
+  - 'Preparation Materials': 'resources/prep.md'
+  - 'Recommended Reading': 'resources/reading.md'
+- FAQ: 'faq.md'
+- Contact: 'contact.md'
