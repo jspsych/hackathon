@@ -23,12 +23,11 @@
           margin-bottom: 30px;
         }
         .schedule-container {
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
           border-radius: 8px;
           overflow: hidden;
         }
         .day-header {
-          background: var(--primary);
+          background: linear-gradient(135deg, #4CAF50 0%, #45A049 100%);
           color: white;
           padding: 15px 20px;
           font-size: 1.2rem;
@@ -70,7 +69,7 @@
     <header class="header-gradient text-white py-16 text-center">
         <div class="container mx-auto px-4">
             <h1 class="text-4xl md:text-5xl font-bold mb-4">Spring Hackathon 2025</h1>
-            <p class="text-xl max-w-2xl mx-auto">Boost Your Access To Open-Science</p>
+            <p class="text-xl max-w-2xl mx-auto">Contribute to Open Source on Vassar's Campus</p>
         </div>
     </header>
 
@@ -91,30 +90,127 @@
         </section>
 
         <section class="mb-12">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div>
-                    <h2 class="text-3xl font-semibold mb-4 text-green-700">Event Schedule</h2>
-                    <p><strong>May 12:</strong> Participant Arrival</p>
-                    <p><strong>May 13-14:</strong> Brainstorming and Collaborative Sessions</p>
-                    <p><strong>May 15:</strong> Presentations, Closing, & Departure</p>
-                </div>
-
-                <div>
-                    <h2 class="text-3xl font-semibold mb-4 text-green-700">What We Offer</h2>
-                    <p><strong>Full Coverage:</strong> Lodging, meals, and travel expenses</p>
-                    <p><strong>Developer Guidance:</strong> Support from the team that built jsPsych</p>
-                    <p><strong>Collaborative Learning:</strong> Working to build your own plugins with a small team!</p>
-                </div>
-
-                <div class="section-bg p-6 rounded-lg">
-                    <h2 class="text-3xl font-semibold mb-4 text-green-700">Who Should Attend</h2>
-                    <ul class="list-disc pl-5">
-                        <li>Experienced jsPsych users</li>
-                        <li>Researchers interested in a deeper, hands-on relationship with open-science</li>
-                        <li>Invested contributors to open-source</li>
-                    </ul>
-                </div>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="section-bg p-6 rounded-lg">
+              <h2 class="text-3xl font-semibold mb-4 text-green-700">Who Should Attend</h2>
+              <ul class="list-disc pl-5">
+                  <li>Experienced jsPsych users</li>
+                  <li>Researchers interested in a deeper, hands-on relationship with open-science</li>
+                  <li>Invested contributors to open-source</li>
+              </ul>
             </div>
+            <div>
+              <h2 class="text-3xl font-semibold mb-4 text-green-700">What We Offer</h2>
+              <p><strong>Full Coverage:</strong> Lodging, meals, and travel expenses</p>
+              <p><strong>Developer Guidance:</strong> Support from the team that built jsPsych</p>
+              <p><strong>Collaborative Learning:</strong> Working to build your own plugins with a small team!</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-12">
+          <div class="schedule-container">
+              <!-- Day 0 -->
+              <div class="day-header">Day 0 (Monday, May 12) - Arrivals</div>
+              <table>
+                <tr>
+                  <td class="time-column">Afternoon</td>
+                  <td class="activity-column">Participant Arrivals</td>
+                </tr>
+              </table>
+              
+              <!-- Day 1 -->
+              <div class="day-header">Day 1 (Tuesday, May 13)</div>
+              <table>
+                <tr>
+                  <td class="time-column">Morning</td>
+                  <td class="activity-column"><span class="meal">BREAKFAST</span></td>
+                </tr>
+                <tr>
+                  <td class="time-column">9:00 AM - 11:30 AM</td>
+                  <td class="activity-column">Intro to Open-Source Contribution & jsPsych Ecosystem</td>
+                </tr>
+                <tr>
+                  <td class="time-column">11:30 AM - 1:30 PM</td>
+                  <td class="activity-column"><span class="meal">LUNCH</span></td>
+                </tr>
+                <tr>
+                  <td class="time-column">1:30 PM - 3:30 PM</td>
+                  <td class="activity-column">Brainstorm & Team Formation</td>
+                </tr>
+                <tr>
+                  <td class="time-column">3:30 PM - 5:30 PM</td>
+                  <td class="activity-column">Work Session 1</td>
+                </tr>
+                <tr>
+                  <td class="time-column">6:00 PM - 7:30 PM</td>
+                  <td class="activity-column"><span class="meal">DINNER</span></td>
+                </tr>
+              </table>
+              
+              <!-- Day 2 -->
+              <div class="day-header">Day 2 (Wednesday, May 14)</div>
+              <table>
+                <tr>
+                  <td class="time-column">Morning</td>
+                  <td class="activity-column"><span class="meal">BREAKFAST</span></td>
+                </tr>
+                <tr>
+                  <td class="time-column">9:00 AM - 12:00 PM</td>
+                  <td class="activity-column">Work Session 2 / Interviews</td>
+                </tr>
+                <tr>
+                  <td class="time-column">12:00 PM - 1:30 PM</td>
+                  <td class="activity-column"><span class="meal">LUNCH</span></td>
+                </tr>
+                <tr>
+                  <td class="time-column">1:30 PM - 2:30 PM</td>
+                  <td class="activity-column">Progress Updates with Q & A</td>
+                </tr>
+                <tr>
+                  <td class="time-column">2:30 PM - 5:30 PM</td>
+                  <td class="activity-column">Work Session 3 / Interviews</td>
+                </tr>
+                <tr>
+                  <td class="time-column">6:00 PM - 7:30 PM</td>
+                  <td class="activity-column"><span class="meal">DINNER</span></td>
+                </tr>
+              </table>
+              
+              <!-- Day 3 -->
+              <div class="day-header">Day 3 (Thursday, May 15)</div>
+              <table>
+                <tr>
+                  <td class="time-column">Morning</td>
+                  <td class="activity-column"><span class="meal">BREAKFAST</span></td>
+                </tr>
+                <tr>
+                  <td class="time-column">9:00 AM - 12:00 PM</td>
+                  <td class="activity-column">Work Session 4 / Interviews</td>
+                </tr>
+                <tr>
+                  <td class="time-column">12:00 PM - 1:30 PM</td>
+                  <td class="activity-column"><span class="meal">LUNCH</span></td>
+                </tr>
+                <tr>
+                  <td class="time-column">1:30 PM - 4:00 PM</td>
+                  <td class="activity-column">Presentations</td>
+                </tr>
+                <tr>
+                  <td class="time-column">4:00 PM - 5:00 PM</td>
+                  <td class="activity-column">Closing Remarks</td>
+                </tr>
+              </table>
+              
+              <!-- Day 4 -->
+              <div class="day-header">Day 4 (Friday, May 16) - Departures</div>
+              <table>
+                <tr>
+                  <td class="time-column">1:00 PM - 5:00 PM</td>
+                  <td class="activity-column">Participant Departures</td>
+                </tr>
+              </table>
+          </div>
         </section>
 
         <section class="bg-green-50 p-8 rounded-lg mb-12">
@@ -128,111 +224,6 @@
                     <li>Receive direct feedback on best-practices, from jsPsych developers and like-minded developers</li>
                 </ul>
             </div>
-        </section>
-
-        <section class="mb-12">
-            <div class="schedule-container">
-                <!-- Day 0 -->
-                <div class="day-header">Day 0 (Sunday, March 16) - Arrivals</div>
-                <table>
-                  <tr>
-                    <td class="time-column">Afternoon</td>
-                    <td class="activity-column">Participant Arrivals</td>
-                  </tr>
-                </table>
-                
-                <!-- Day 1 -->
-                <div class="day-header">Day 1 (Monday, March 17)</div>
-                <table>
-                  <tr>
-                    <td class="time-column">Morning</td>
-                    <td class="activity-column"><span class="meal">BREAKFAST</span></td>
-                  </tr>
-                  <tr>
-                    <td class="time-column">9:00 AM - 11:30 AM</td>
-                    <td class="activity-column">Intro to Open-Source Contribution & jsPsych Ecosystem</td>
-                  </tr>
-                  <tr>
-                    <td class="time-column">11:30 AM - 1:30 PM</td>
-                    <td class="activity-column"><span class="meal">LUNCH</span></td>
-                  </tr>
-                  <tr>
-                    <td class="time-column">1:30 PM - 3:30 PM</td>
-                    <td class="activity-column">Brainstorm & Team Formation</td>
-                  </tr>
-                  <tr>
-                    <td class="time-column">3:30 PM - 5:30 PM</td>
-                    <td class="activity-column">Work Session 1</td>
-                  </tr>
-                  <tr>
-                    <td class="time-column">6:00 PM - 7:30 PM</td>
-                    <td class="activity-column"><span class="meal">DINNER</span></td>
-                  </tr>
-                </table>
-                
-                <!-- Day 2 -->
-                <div class="day-header">Day 2 (Tuesday, March 18)</div>
-                <table>
-                  <tr>
-                    <td class="time-column">Morning</td>
-                    <td class="activity-column"><span class="meal">BREAKFAST</span></td>
-                  </tr>
-                  <tr>
-                    <td class="time-column">9:00 AM - 12:00 PM</td>
-                    <td class="activity-column">Work Session 2 / Interviews</td>
-                  </tr>
-                  <tr>
-                    <td class="time-column">12:00 PM - 1:30 PM</td>
-                    <td class="activity-column"><span class="meal">LUNCH</span></td>
-                  </tr>
-                  <tr>
-                    <td class="time-column">1:30 PM - 2:30 PM</td>
-                    <td class="activity-column">Progress Updates with Q & A</td>
-                  </tr>
-                  <tr>
-                    <td class="time-column">2:30 PM - 5:30 PM</td>
-                    <td class="activity-column">Work Session 3 / Interviews</td>
-                  </tr>
-                  <tr>
-                    <td class="time-column">6:00 PM - 7:30 PM</td>
-                    <td class="activity-column"><span class="meal">DINNER</span></td>
-                  </tr>
-                </table>
-                
-                <!-- Day 3 -->
-                <div class="day-header">Day 3 (Wednesday, March 19)</div>
-                <table>
-                  <tr>
-                    <td class="time-column">Morning</td>
-                    <td class="activity-column"><span class="meal">BREAKFAST</span></td>
-                  </tr>
-                  <tr>
-                    <td class="time-column">9:00 AM - 12:00 PM</td>
-                    <td class="activity-column">Work Session 4 / Interviews</td>
-                  </tr>
-                  <tr>
-                    <td class="time-column">12:00 PM - 1:30 PM</td>
-                    <td class="activity-column"><span class="meal">LUNCH</span></td>
-                  </tr>
-                  <tr>
-                    <td class="time-column">1:30 PM - 4:00 PM</td>
-                    <td class="activity-column">Presentations</td>
-                  </tr>
-                  <tr>
-                    <td class="time-column">4:00 PM - 5:00 PM</td>
-                    <td class="activity-column">Closing Remarks</td>
-                  </tr>
-                </table>
-                
-                <!-- Day 4 -->
-                <div class="day-header">Day 4 (Thursday, March 20) - Departures</div>
-                <table>
-                  <tr>
-                    <td class="time-column">1:00 PM - 5:00 PM</td>
-                    <td class="activity-column">Participant Departures</td>
-                  </tr>
-                </table>
-              </div>
         </section>
 
         <section class="text-center">
