@@ -46,7 +46,9 @@
       }
       main {
         padding-left: 1rem;
-        padding-right: 1rem; 
+        padding-right: 1rem;
+        padding: 1.5rem; 
+        border-radius: 0.5rem;  
       }
       section{
         margin-bottom: 3rem; /* mb-12 */
@@ -57,6 +59,10 @@
         color: #047857; /* text-green-700 */ 
         line-height: 2.25rem; /* text-3xl */
         margin-bottom: 1rem; /* mb-4 */
+      }
+      .info {
+        padding: 1.5rem; 
+        border-radius: 0.5rem; 
       }
       .main-container {
         width: 100%;
@@ -130,9 +136,9 @@
       </div>
     </header>
 
-    <main class="grid md:grid-cols-2">
+    <main class="grid md:grid-cols-2"> <!-- unsure still how to consolidate this grid; probably as a flexbox like main container -->
       <section>
-        <div class="p-6 rounded-lg">
+        <div class="info">
           <h2>
             Overview
           </h2>
@@ -148,7 +154,7 @@
           </p>
         </div>
 
-        <div class="p-6 rounded-lg">
+        <div class="info">
           <h2>
             Event Details
           </h2>
@@ -159,7 +165,7 @@
           </p>
         </div>
 
-        <div class="p-6 rounded-lg">
+        <div class="info">
           <h2>
             Target Audience
           </h2>
@@ -172,7 +178,7 @@
             contribute your work to the jsPsych ecosystem this event is for you!
           </p>
         </div>
-        <div class="p-6 rounded-lg">
+        <div class="info">
           <h2>
             What We Offer
           </h2>
@@ -189,7 +195,7 @@
             plugins or modifications with a small team!
           </p>
         </div>
-        <div class="p-6 rounded-lg">
+        <div class="info">
           <h2>
             Want to attend?
           </h2>
