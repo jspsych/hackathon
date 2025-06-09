@@ -43,13 +43,19 @@
       }
       h1 {
         text-align: center;
-        margin-bottom: 30px;
+        font-size: 2.25rem; /* text-4xl */
+        font-weight: 700; /* font-bold */
+        color: #ffffff; /* text-white */
+        line-height: 2.5rem; /* text-4xl */
+        padding-top: 4rem; /* py-16 */
+        padding-bottom: 4rem; /* py-16 */
+        margin-bottom: 1rem; /* mb-4 */
       }
       h2 {
         font-size: 1.875rem; /* text-3xl */
         font-weight: 600; /* font-semibold */
-        line-height: 2.25rem; /* text-3xl */
         color: #047857; /* text-green-700 */ 
+        line-height: 2.25rem; /* text-3xl */
         margin-bottom: 1rem; /* mb-4 */
       }
       .schedule-container {
@@ -97,18 +103,24 @@
       .action:hover {
         background-color: #c46f00;
       }
+
+      @media (min-width: 768px) {
+        h1 { 
+          font-size: 3rem;
+          line-height: 1; 
+        }}
     </style>
   </head>
   <body class="bg-white">
-    <header class="header-hackathon text-white py-16 text-center">
-      <div class="container mx-auto px-4">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4 no-filter">
+    <header class="header-hackathon">
+      <div class="mx-auto px-4">
+        <h1>
           jsPsych Spring Hackathon 2025
         </h1>
       </div>
     </header>
 
-    <main class="container mx-auto px-4 py-12 grid md:grid-cols-2">
+    <main class="mx-auto px-4 py-12 grid md:grid-cols-2">
       <section class="mb-12">
         <div class="p-6 rounded-lg">
           <h2>
@@ -138,7 +150,7 @@
         </div>
 
         <div class="p-6 rounded-lg">
-          <h2 class="text-3xl font-semibold mb-4 text-green-700">
+          <h2>
             Target Audience
           </h2>
           <p>
@@ -151,7 +163,7 @@
           </p>
         </div>
         <div class="p-6 rounded-lg">
-          <h2 class="text-3xl font-semibold mb-4 text-green-700">
+          <h2>
             What We Offer
           </h2>
           <p>
@@ -168,7 +180,7 @@
           </p>
         </div>
         <div class="p-6 rounded-lg">
-          <h2 class="text-3xl font-semibold mb-6 text-green-700">
+          <h2>
             Want to attend?
           </h2>
           <a
