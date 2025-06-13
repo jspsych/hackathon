@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <style>
+      /* root and body */
       :root {
         --primary: #45a049;
         --secondary: #45a049;
@@ -26,6 +27,8 @@
         background-color: #ffffff; /* bg-white */
         margin-inline: auto;
       }
+
+      /* header */
       header{
         padding-left: 1rem;
         padding-right: 1rem; 
@@ -43,6 +46,13 @@
         padding-bottom: 4rem; /* py-16 */
         margin-bottom: 1rem; /* mb-4 */
       }
+      @media (min-width: 768px) {
+        h1 { 
+          font-size: 3rem;
+          line-height: 1; 
+        }}
+
+      /* main and info sections */
       main {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -61,6 +71,8 @@
         padding: 1.5rem; 
         border-radius: 0.5rem; 
       }
+
+      /* schedule */
       .main-container {
         width: 100%;
         max-width: 1000px;
@@ -107,6 +119,8 @@
         font-weight: 600;
         color: var(--secondary);
       }
+
+      /* action button */
       .no-filter {
         filter: revert;
       }
@@ -116,12 +130,6 @@
       .action:hover {
         background-color: #c46f00;
       }
-
-      @media (min-width: 768px) {
-        h1 { 
-          font-size: 3rem;
-          line-height: 1; 
-        }}
     </style>
   </head>
   <body>
