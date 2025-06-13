@@ -129,12 +129,32 @@
         color: var(--secondary);
       }
 
-      /* action button */
-      .action {
+      /* RSVP button */
+      .interest-button {
+        display: inline-block; 
+        padding: 1.5rem; 
+        border-radius: 0.5rem; 
+        border-width: 1px; 
+        font-weight: 700; 
+        color: #ffffff; 
         background-color: var(--accent);
+        transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms; 
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
       }
-      .action:hover {
+      .interest-button:hover {
         background-color: #c46f00;
+      }
+      .contact {
+        margin-top: 1rem; 
+        color: #4B5563; /* not sure how stylistically necessary this grey text is */
+      }
+      .contact a {
+        color: #047857; 
+      }
+      .contact a:hover {
+        text-decoration: underline; 
       }
     </style>
   </head>
@@ -212,16 +232,13 @@
           </h2>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSe8jG20UlSE3KmS2oH2249LF3-etDgasag2AXgfFLU0-wljhA/viewform?usp=sf_link"
-            class="action text-white font-bold p-6 inline-block transition duration-300 border rounded-lg shadow-md card-hover"
+            class="interest-button"
           >
               Indicate Your Interest
           </a>
-          <p class="mt-4 text-gray-600">
+          <p class="contact">
             Have questions?
-            <a
-              href="mailto:community@jspsych.org"
-              class="text-green-700 hover:underline"
-            >
+            <a href="mailto:community@jspsych.org">
               Email us at community@jspsych.org
             </a>
           </p>
