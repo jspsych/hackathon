@@ -129,6 +129,7 @@
     border-radius: 0.5rem; 
     border-width: 1px; 
     font-weight: 700; 
+    text-decoration: none;
     color: #ffffff; 
     background-color: var(--accent);
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
@@ -145,6 +146,7 @@
   }
   .contact a {
     color: #047857; 
+    text-decoration: none;
   }
   .contact a:hover {
     text-decoration: underline; 
