@@ -1,4 +1,8 @@
 /* root and body */
+* {
+    margin: 0;
+    padding: 0;
+}
 :root {
     --primary: #45a049;
     --secondary: #45a049;
