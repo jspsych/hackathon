@@ -99,22 +99,18 @@
             <p>Subscribe to our newsletter to receive the latest information about jsPsych hackathons, codebase updates, and new plugins.</p>
             <div style="text-align: center" class="sender-form-field" data-sender-form-id="m5li9yz5ejr0wrwxrw5"></div>
             <script>
-              (function (window, document, scriptTag, scriptURL, functionName) {
-                
-                window['Sender'] = functionName;
-                window[functionName] = window[functionName] || function () {
-                  (window[functionName].queue = window[functionName].queue || []).push(arguments)
-                }, window[functionName].timestamp = 1 * new Date();
-
-                var newScript = document.createElement(scriptTag),
-                    firstScript = document.getElementsByTagName(scriptTag)[0];
-                newScript.async = 1;
-                newScript.src = scriptURL;
-                firstScript.parentNode.insertBefore(newScript, firstScript)
-
-              })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
-
-              sender('06a78af0a32181')
+              (function (s, e, n, d, er) {
+                    s['Sender'] = er;
+                    s[er] = s[er] || function () {
+                    (s[er].q = s[er].q || []).push(arguments)
+                    }, s[er].l = 1 * new Date();
+                    var a = e.createElement(n),
+                        m = e.getElementsByTagName(n)[0];
+                    a.async = 1;
+                    a.src = d;
+                    m.parentNode.insertBefore(a, m)
+                })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+                sender('06a78af0a32181')
             </script>
         </section>
     </main>
