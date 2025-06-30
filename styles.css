@@ -32,6 +32,9 @@ header{
 .header-hackathon {
   background: url("banner.png") center center/cover no-repeat;
 }
+.header-virtual-hackathon {
+  background: url("virtual-banner.png") center center/cover no-repeat;
+}
 h1 {
   text-align: center;
   font-size: 2.25rem; /* text-4xl */
