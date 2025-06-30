@@ -55,7 +55,10 @@ main {
   padding-right: 1rem;
   display: grid;
 }
-section{
+.info-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 3rem; /* mb-12 */
 }
 h2 {
@@ -161,14 +164,14 @@ tr:nth-child(even) {
 
 /* index.html */
 /* link styling for index, 
-but also interferes with RSVP buttons in hackathon pages */
+but also interferes with links under RSVP buttons in hackathon pages */
 a {
   display: inline-block; 
   padding-top: 0.5rem;
   padding-bottom: 0.5rem; 
   padding-left: 1rem;
   padding-right: 1rem; 
-  border-radius: 9999px; 
+  border-radius: 0.5rem; 
   font-weight: 700; 
   color: #000000; 
 }
@@ -183,6 +186,7 @@ button {
   border-radius: 0.5rem; 
   border-width: 0px; 
   background-color: #ffffff; 
+  max-width: 25rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
 }
 
