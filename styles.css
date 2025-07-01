@@ -88,7 +88,8 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -151,35 +152,33 @@ tr:nth-child(even) {
   background-color: #c46f00;
 }
 .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 1rem; 
   color: #4B5563; /* not sure how stylistically necessary this grey text is */
 }
 .contact a {
   color: var(--secondary); 
   text-decoration: none;
+  font-weight: 700; 
 }
 .contact a:hover {
   text-decoration: underline; 
 }
 
 /* index.html */
-/* link styling for index, 
-but also interferes with links under RSVP buttons in hackathon pages */
-a {
+/* button card styling for index */
+.hackathon-card {
   display: inline-block; 
   padding-top: 0.5rem;
   padding-bottom: 0.5rem; 
   padding-left: 1rem;
-  padding-right: 1rem; 
-  border-radius: 0.5rem; 
-  font-weight: 700; 
+  padding-right: 1rem;
   color: #000000; 
 }
 
-/* button for index,
-does NOT interfere with RSVP buttons in hackathon pages
-NEEDS CENTERING */
-
+/* button for index */
 button {
   padding: 1.5rem;
   font-size: 1rem;
@@ -201,7 +200,7 @@ h3 {
 
 /* button text
 could be relocated to a? */
-button > p {
+button p {
   margin-bottom: 1rem; 
 }
 
