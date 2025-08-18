@@ -145,16 +145,12 @@ tr:nth-child(even) {
   transition-duration: 300ms; 
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
 }
-.info:has(.interest-button) {
-  text-align: center;
-}
 .interest-button:hover {
   background-color: #c46f00;
 }
 .contact {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-top: 1rem; 
   color: #4B5563; /* not sure how stylistically necessary this grey text is */
 }
