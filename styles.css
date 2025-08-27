@@ -221,6 +221,9 @@ could work for virtual */
   max-width: 42rem; 
 }
 /* need to put padding between form field and newsletter description */
+footer {
+  margin: auto;
+}
 .sender-form-field {
   padding-top: 1rem; /* maybe this is better positioned elsewhere */
   background-color: #ECFDF5; 
