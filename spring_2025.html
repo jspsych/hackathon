@@ -4,110 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>jsPsych Spring 2025</title>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <style>
-      :root {
-        --primary: #45a049;
-        --secondary: #45a049;
-        --light: #f8f9fa;
-        --dark: #343a40;
-        --border: #dee2e6;
-        --highlight: #e9ecef;
-        --accent: #ff9100;
-      }
-
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Helvetica, Arial, sans-serif;
-        line-height: 1.6;
-        color: #333;
-      }
-      .header-hackathon {
-        background: url("banner.png") center center/cover no-repeat;
-      }
-      .section-bg {
-        background-color: #f4f4f4;
-      }
-      .main-container {
-        width: 100%;
-        max-width: 1000px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
-      }
-      h1 {
-        text-align: center;
-        margin-bottom: 30px;
-      }
-      .schedule-container {
-        border-radius: 8px;
-        overflow: hidden;
-      }
-      .day-header {
-        background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
-        color: white;
-        padding: 15px 20px;
-        font-size: 1.2rem;
-        font-weight: 600;
-      }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        background: white;
-      }
-      th,
-      td {
-        padding: 15px 20px;
-        text-align: left;
-        border-bottom: 1px solid;
-      }
-      th {
-        font-weight: 600;
-        color: var(--primary);
-      }
-      tr:nth-child(even) {
-        background-color: var(--light);
-      }
-      .time-column {
-        width: 30%;
-        color: var(--dark);
-        font-weight: 500;
-      }
-      .activity-column {
-        width: 70%;
-      }
-      .meal {
-        font-weight: 600;
-        color: var(--secondary);
-      }
-      .no-filter {
-        filter: revert;
-      }
-      .action {
-        background-color: var(--accent);
-      }
-      .action:hover {
-        background-color: #c46f00;
-      }
-    </style>
+    <link href="./styles.css" rel="stylesheet"/>
   </head>
-  <body class="bg-white">
-    <header class="header-hackathon text-white py-16 text-center">
-      <div class="container mx-auto px-4">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4 no-filter">
+  <body>
+    <header class="header-hackathon">
+      <div>
+        <h1>
           jsPsych Spring Hackathon 2025
         </h1>
       </div>
     </header>
 
-    <main class="container mx-auto px-4 py-12 grid md:grid-cols-2">
-      <section class="mb-12">
-        <div class="p-6 rounded-lg">
-          <h2 class="text-3xl font-semibold mb-4 text-green-700">Overview</h2>
+    <main>
+      <section class="info-container">
+        <div class="info">
+          <h2>
+            Overview
+          </h2>
           <p>
             We're excited to announce our first-ever hackathon dedicated to
             extending the jsPsych ecosystem! This three day event will provide
@@ -120,8 +33,8 @@
           </p>
         </div>
 
-        <div class="p-6 rounded-lg">
-          <h2 class="text-3xl font-semibold mb-4 text-green-700">
+        <div class="info">
+          <h2>
             Event Details
           </h2>
           <p><strong>When:</strong> May 12-15, 2025</p>
@@ -131,8 +44,8 @@
           </p>
         </div>
 
-        <div class="p-6 rounded-lg">
-          <h2 class="text-3xl font-semibold mb-4 text-green-700">
+        <div class="info">
+          <h2>
             Target Audience
           </h2>
           <p>
@@ -144,8 +57,8 @@
             contribute your work to the jsPsych ecosystem this event is for you!
           </p>
         </div>
-        <div class="p-6 rounded-lg">
-          <h2 class="text-3xl font-semibold mb-4 text-green-700">
+        <div class="info">
+          <h2>
             What We Offer
           </h2>
           <p>
@@ -161,29 +74,28 @@
             plugins or modifications with a small team!
           </p>
         </div>
-        <div class="p-6 rounded-lg">
-          <h2 class="text-3xl font-semibold mb-6 text-green-700">
+        <div class="info">
+          <h2>
             Want to attend?
           </h2>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSe8jG20UlSE3KmS2oH2249LF3-etDgasag2AXgfFLU0-wljhA/viewform?usp=sf_link"
-            class="action text-white font-bold p-6 inline-block transition duration-300 border rounded-lg shadow-md card-hover"
+            class="interest-button"
           >
               Indicate Your Interest
           </a>
-          <p class="mt-4 text-gray-600">
-            Have questions?
-            <a
-              href="mailto:community@jspsych.org"
-              class="text-green-700 hover:underline"
-            >
+          <div class="contact">
+            <p>
+              Have questions?
+            </p>
+            <a href="mailto:community@jspsych.org">
               Email us at community@jspsych.org
             </a>
-          </p>
+          </div>
         </div>
       </section>
 
-      <section class="mb-12">
+      <section>
         <div class="main-container">
           <div class="schedule-container">
             <!-- Day 0 -->

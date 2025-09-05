@@ -4,52 +4,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jsPsych Virtual 2025</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        .header-gradient {
-            background: linear-gradient(135deg, #4CAF50 0%, #45A049 100%);
-        }
-        .section-bg {
-            background-color: #f4f4f4;
-        }
-    </style>
+    <link href="./styles.css" rel="stylesheet">
 </head>
-<body class="bg-white">
-    <header class="header-gradient text-white py-16 text-center">
-        <div class="container mx-auto px-4">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Virtual Hackathon 2025</h1>
-            <p class="text-xl max-w-2xl mx-auto">Coming Soon!</p>
+<body>
+    <header class="header-virtual-hackathon">
+        <div>
+            <h1>Virtual Hackathon 2025</h1>
         </div>
     </header>
 
-    <main class="container mx-auto px-4 py-12">
-        <section class="mb-12">
-            <div>
-                <h2 class="text-3xl font-semibold mb-4 text-green-700">Event Details Forthcoming...</h2>
+    <main>
+        <section>
+            <div class="info">
+                <h2>Overview</h2>
+                <p>
+                    We're excited to announce our second hackathon dedicated to
+                    extending the jsPsych ecosystem! This two-week event will provide
+                    hands on training in contributing to open source software and
+                    building custom plugins for jsPsych.
+                </p></br>
+                <p>
+                    Participants will work in small teams to develop new plugins, 
+                    extensions, or timelines with guidance from the jsPsych development 
+                    team. A new <strong>plugin</strong> can make a new type of trial 
+                    available for researchers, like a drag and drop word bank. A new 
+                    <strong>extension</strong> can add new functionality across multiple 
+                    trials and even additional data types, like eye tracking or fitbit 
+                    metrics. A new <strong>timeline</strong> is a way to share a parameterized 
+                    version of an entire task. For example, a Stroop task with customizable 
+                    words, colors, stimulus timing, and responses.
+                </p></br>
+                <p>
+                    We will also offer hands-on support for building experiments, and help 
+                    teams think about how to convert experiments into shareable, parameterized 
+                    timelines.
+                </p>
+            </div>
+            <div class="info">
+                <h2>Event Details</h2>
+                <p><strong>Start Date:</strong> September 29th, 2025</p>
+                <p><strong>End Date:</strong> October 11th, 2025</p>
+                <p><strong>Where:</strong> Hosted virtually on Discord and Zoom</p>
+            </div>
+            <div class="info">
+                <h2>Target Audience</h2>
+                <p>
+                    This event is aimed at researchers who have experience with using
+                    jsPsych for building experiments. We won't be teaching the basics of
+                    how to use jsPsych at this event. Instead, we will be focusing on
+                    how to develop and extend jsPsych itself. If you're interested in
+                    learning how to build your own plugins, or you want to learn how to
+                    contribute your work to the jsPsych ecosystem, this event is for you!
+                    <br><br>
+                    This is also an especially accessible opportunity for anyone who would
+                    otherwise be unable to travel for an in-person event.
+                </p>
+            </div>
+            <div class="info">
+                <h2>What We Offer</h2>
+                <p><strong>Developer Guidance:</strong> Workshops and live support from the 
+                    team that built jsPsych, with flexible options for participants
+                    to get synchronous or asynchronous feedback to suit their timezone.</p>
+                <p><strong>Collaborative Learning:</strong> Working to build your own plugins 
+                    or modifications with a small team, dedicated project channels, and peer 
+                    feedback.</p>
+                <p><strong>Project Showcases:</strong> Platforms to document and share 
+                    your work with our community, and even contribute back to our 
+                    public repositories.</p>             
+            </div>
+            <div class="info">
+                <a href="https://forms.gle/MHbhxV9gDJC5ZVBr9" class="interest-button">
+                    Indicate Your Interest
+                </a>  
+                <div class="contact">
+                    <p>
+                        Have questions?
+                    </p>
+                    <a href="mailto:community@jspsych.org">
+                        Email us at community@jspsych.org
+                    </a>
+                </div>  
             </div>
         </section>
-
-        <section class="text-center">
-            <h2 class="text-3xl font-semibold mb-6 text-green-700">How to Participate</h2>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8jG20UlSE3KmS2oH2249LF3-etDgasag2AXgfFLU0-wljhA/viewform?usp=sf_link" 
-               class="bg-orange-500 hover:bg-orange-600 text-green-700 font-bold py-3 px-6 rounded-full inline-block transition duration-300">
-                Indicate Your Interest
-            </a>
-            <p class="mt-4 text-gray-600">
-                Interested but have questions? 
-                <a href="mailto:community@jspsych.org" class="text-green-700 hover:underline">
-                    Email us at community@jspsych.org
-                </a>
-            </p>
+        <section>
+            <div class="info">
+                <h2>How to Participate</h2>
+                <ol>
+                    <li><strong>Sign up through our interest form: </strong>
+                        Let us know who you are, your home institution, and what kind of plugin
+                        you would like to contribute to jsPsych.</li>
+                    <li><strong>Accept the invite to our Discord server: </strong>
+                        Our team will follow up with this invitation after you submit your form.
+                        We'll be hosting all collaboration, workshops, and feedback on our server.</li>
+                    <li><strong>Review our server guide, schedule, and documentation: </strong>
+                        Once you're clear on how to navigate our server's channel, be sure to check 
+                        our schedule to know when our live sessions and drop-in hours are happening. 
+                        We will also provide step-by-step documentation for how to painlessly set up 
+                        your development space.</li>
+                    <li><strong>Brainstorm your plugin:</strong>
+                        Meet your peers in our project-brainstorming channel and flesh out each
+                        others' plugin ideas.</li>
+                    <li><strong>Choose a project to join and meet your teammates:</strong>
+                        Once you're ready to commit to a project, just fill in a form that will go
+                        live in the server's announcements channel. We'll assign you the role you 
+                        need to access your team's private collaboration channels. Then you can meet
+                        your teammates and start building!</li>
+                </ol>
+            </div>
+            </div>
+            <div class="main-container">
+                <div class="schedule-container">
+                    <div class="day-header">Week 1: 09/29 to 10/06</div>
+                    <table>
+                        <tr>
+                            <td class="time-column">Monday</td>
+                            <td class="activity-column">
+                                <p style="color: var(--primary);">
+                                    <em>Choose which fits your timezone:</em></p>
+                                <p><strong>9AM EDT</strong> Morning Onboarding Session</p>
+                                <p><strong>5PM EDT</strong> Evening Onboarding Session</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-column">Tuesday</td>
+                            <td class="activity-column">
+                                <p><strong>9-11AM EDT</strong> Drop-In Hours</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-column">Wednesday</td>
+                            <td class="activity-column">
+                                <p><strong>9-11AM EDT</strong> Drop-In Hours</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-column">Thursday</td>
+                            <td class="activity-column"></td>
+                        </tr>
+                        <tr>
+                            <td class="time-column">Friday</td>
+                            <td class="activity-column"></td>
+                        </tr>
+                        <tr>
+                            <td class="time-column">Saturday</td>
+                            <td class="activity-column"></td>
+                        </tr>
+                    </table>
+                    <div class="day-header">Week 2: 10/07 to 10/11</div>
+                    <table>
+                        <tr>
+                            <td class="time-column">Monday</td>
+                            <td class="activity-column">
+                                <p><strong>9-11AM EDT</strong> Drop-In Hours</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-column">Tuesday</td>
+                            <td class="activity-column">
+                                <p><strong>9-11AM EDT</strong> Drop-In Hours</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-column">Wednesday</td>
+                            <td class="activity-column">
+                                <p><strong>9-11AM EDT</strong> Drop-In Hours</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-column">Thursday</td>
+                            <td class="activity-column"></td>
+                        </tr>
+                        <tr>
+                            <td class="time-column">Friday</td>
+                            <td class="activity-column">
+                                <p><strong>9AM EDT</strong> Project Showcase Template Opens</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-column">Saturday</td>
+                            <td class="activity-column">
+                                <p><strong>9AM-12PM EDT</strong> Final Project Demos
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </section>
     </main>
-
-    <footer class="bg-gray-100 py-8 text-center">
-    </footer>
 </body>
 </html>
