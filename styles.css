@@ -55,12 +55,6 @@ main {
   padding-right: 1rem;
   display: grid;
 }
-.cards-container{ /* only shows up in index.html to align cards */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 3rem; /* mb-12 */
-}
 h2 {
   font-size: 1.875rem; /* text-3xl */
   font-weight: 600; /* font-semibold */
@@ -166,23 +160,29 @@ tr:nth-child(even) {
 
 /* index.html */
 /* button card styling for index */
+.cards-container{
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
 .hackathon-card {
-  display: inline-block; 
+  display: inline-block;
+  max-width: 25rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem; 
   padding-left: 1rem;
   padding-right: 1rem;
   color: #000000; 
 }
-
 /* button for index */
 button {
   padding: 1.5rem;
   font-size: 1rem;
   border-radius: 0.5rem; 
   border-width: 0px; 
-  background-color: #ffffff; 
-  max-width: 25rem;
+  background-color: #ffffff;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
 }
 
