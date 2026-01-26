@@ -30,10 +30,10 @@ header{
   color: #ffffff; /* text-white */
 }
 .header-hackathon {
-  background: url("banner.png") center center/cover no-repeat;
+  background: url("../img/banner.png") center center/cover no-repeat;
 }
 .header-virtual-hackathon {
-  background: url("virtual-banner.png") center center/cover no-repeat;
+  background: url("../img/virtual-banner.png") center center/cover no-repeat;
 }
 h1 {
   text-align: center;
@@ -47,19 +47,12 @@ h1 {
     font-size: 3rem;
     line-height: 1; 
   }}
-/* maybe also include adjusted subheader fonts */
 
 /* main and info sections */
 main {
   padding-left: 1rem;
   padding-right: 1rem;
   display: grid;
-}
-.cards-container{ /* only shows up in index.html to align cards */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 3rem; /* mb-12 */
 }
 h2 {
   font-size: 1.875rem; /* text-3xl */
@@ -70,7 +63,7 @@ h2 {
 }
 .info {
   padding: 1.5rem; 
-  border-radius: 0.5rem; 
+  border-radius: 0.5rem;
 }
 @media (min-width: 768px) {
   /* when screen is large enough, 
@@ -162,70 +155,4 @@ tr:nth-child(even) {
 }
 .contact a:hover {
   text-decoration: underline; 
-}
-
-/* index.html */
-/* button card styling for index */
-.hackathon-card {
-  display: inline-block; 
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem; 
-  padding-left: 1rem;
-  padding-right: 1rem;
-  color: #000000; 
-}
-
-/* button for index */
-button {
-  padding: 1.5rem;
-  font-size: 1rem;
-  border-radius: 0.5rem; 
-  border-width: 0px; 
-  background-color: #ffffff; 
-  max-width: 25rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
-}
-
-/* heading for button */
-h3 {
-  margin-bottom: 1rem; 
-  font-size: 1.5rem;
-  line-height: 2rem; 
-  font-weight: 700; 
-  color: #047857; 
-}
-
-/* button text
-could be relocated to a? */
-button p {
-  margin-bottom: 1rem; 
-}
-
-/* subheader shows up in index header,
-could work for virtual */
-.subheader {
-  text-align: center; 
-  font-size: 1.25rem;
-  line-height: 1.75rem; 
-}
-
-/* newsletter signup */
-#newsletter {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem; 
-  padding-top: 3rem;
-  padding-bottom: 3rem; 
-  border-radius: 0.5rem; 
-  text-align: center; 
-  background-color: #ECFDF5; 
-  margin-bottom: 1.5rem; 
-  max-width: 42rem; 
-}
-/* need to put padding between form field and newsletter description */
-footer {
-  margin: auto;
-}
-.sender-form-field {
-  padding-top: 1rem; /* maybe this is better positioned elsewhere */
-  background-color: #ECFDF5; 
 }
