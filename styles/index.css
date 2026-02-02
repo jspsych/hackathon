@@ -64,7 +64,6 @@ main {
   width: 100%;
   box-sizing: content-box;
   vertical-align: top;
-  justify-self: center;
 }
 h2 {
   font-size: 1.875rem; /* text-3xl */
