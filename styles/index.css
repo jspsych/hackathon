@@ -66,11 +66,11 @@ main {
   vertical-align: top;
 }
 h2 {
-  font-size: 1.875rem; /* text-3xl */
-  font-weight: 600; /* font-semibold */
-  color: var(--secondary); /* text-green-700 */ 
-  line-height: 2.25rem; /* text-3xl */
-  margin-bottom: 1rem; /* mb-4 */
+  line-height: 2.25rem;
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: var(--secondary);
+  margin-bottom: 1rem;
 }
 
 /* button card styling */
@@ -88,8 +88,7 @@ h2 {
   }
 }
 .hackathon-card {
-  display: inline-block;
-  width: 100%;
+  display: block;
   max-width: 25rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem; 
